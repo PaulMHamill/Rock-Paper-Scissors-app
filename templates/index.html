@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <head>
+        {% extends "layout.html" %}
+
+        {% block title %}{{ super() }} | Home {% endblock %}
+        
+        {% block content %}
+        <h1>Welcome to the Rock Paper Scissors Game</h1>
+        <p>To play, in the address bar above append '/rps/' to the URL. Then after that last '/' type in your choice.</p>
+        <p>For example if you want to choose 'rock':</p>
+        <p>http://url/rps/rock</p>
+        
+        {% endblock %}
+ 
